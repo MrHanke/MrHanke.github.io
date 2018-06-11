@@ -1,0 +1,426 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Hank's Auto Auctions</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<!-- Load the base jquery code from the jquery Content Distribution Network (CDN) -->
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"
+integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+crossorigin="anonymous"></script>
+    
+<!-- Load the codes necessary to migrate from an earlier version (optional) -->
+<script src="https://code.jquery.com/jquery-migrate-3.0.1.min.js"
+integrity="sha256-F0O1TmEa4I8N24nY0bya59eP6svWcshqX1uzwaWC4F4="
+crossorigin="anonymous"></script>
+
+<!-- Load the code for the mobile extensions -->
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+<!-- Load the base stylesheet for jquery mobile -->
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+	
+<!--<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>-->
+ <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCf0CigVD887gI8Tn1_Ihep01DgwSbXGGM&callback=initialise"></script> 
+	
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+<link rel="stylesheet" href="css/themes/auto.css" />
+<link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />	  
+<style type="text/css">
+body {
+}
+	.imageSet{
+		width: 54%;
+		margin-left: auto;
+		padding: 10px;
+	}
+	.imageSet img{
+		margin-left: 2em;
+		margin-right: 2em;
+	}
+	.head{
+		height: 11em;
+	}
+</style>
+
+</head>
+
+<body>
+<div data-role="page" id="page">
+<div data-role="header" class="head">
+<br>
+<h1>Welcome to <br> Hank's Auto Auctions</h1>
+</div>
+<div class="ui-content" role="main">
+<div class="ui-content" data-role="content" id="importantImage">
+</div>
+	</div>
+<div data-role="footer" data-position="fixed">
+  <h4></h4>
+</div>
+</div>
+<div data-role="page" id="pageL">
+<div data-role="header" class="head">
+	<div class="imageSet">
+	<img src="images/hank24.png" width="130" height="91" alt=""/>
+<h3>Hank's Auto Auctions</h3>
+	</div>
+	<a href="#cart" class="ui-btn ui-icon-cart ui-btn-icon-left">Cart</a>
+</div>
+<div class="ui-content" role="main">
+  <div id="inventoryList" data-role="listview" data-filter="true"></div>
+  </div>
+<div data-role="footer" data-position="fixed">
+	<h4>Current Inventory</h4>
+</div>
+</div>
+
+<div data-role="page" id="page1">
+<div data-role="header" class="head">
+<a href="#pageL" class="ui-btn  ui-icon-arrow-l ui-btn-icon-left">Home</a>
+	<div class="imageSet">
+	<img src="images/hank24.png" width="130" height="91" alt=""/>
+<h3>Hank's Auto Auctions</h3>
+	</div>
+	<a href="#cart" class="ui-btn ui-icon-cart ui-btn-icon-left">Cart</a>
+</div>
+<div class="ui-content">
+<div id="thePic">Pic</div>
+<div><span id="theBrand"></span>
+	<p>Time Remaining: <span id="timeLeft"></span></p>
+	<ul>
+		<li>Engine: <span id="theEngine"></span></li>
+		<li>Transmition: <span id="theTrans"></span></li>
+		<li>Miles: <span id="theMiles"></span></li>
+		<li>Color: <span id="theColor"></span></li>
+		<li>Price: $<span id="thePrice"></span></li>
+	</ul></div>
+</div>
+	
+<a href="#page2" class="ui-btn" id="costButton">Calculate Costs for This Car</a>
+<a id="cartButton" class="ui-btn">Add to cart</a>
+<div data-role="footer" data-position="fixed">
+<h4><span id="footerText"> </span></h4>
+</div>
+</div>
+<div data-role="page" id="page2">
+<div data-role="header">
+<a href="#pageL" class="ui-btn  ui-icon-arrow-l ui-btn-icon-left">Home</a>
+	<div class="imageSet">
+	<img src="images/hank24.png" width="130" height="91" alt=""/>
+<h3>Hank's Auto Auctions</h3>
+	</div>
+	<a href="#cart" class="ui-btn ui-icon-cart ui-btn-icon-left">Cart</a>
+</div>
+<div class="ui-content" role="main">
+<div id="theSmallPic">Pic</div>
+   <div class="ui-field-contain">
+      <label for="B">Price of <span id="CompName"> </span> :</label>
+      <input type="number" name="B" id="B" data-clear-btn="true" readonly>
+      </div>
+      <div class="ui-field-contain">
+      <label for="T">Sales Tax:</label>
+      <input type="number" name="T" id="T" readonly >
+      </div>
+      <div class="ui-field-contain">
+      <label for="P">Buyer's Premium:</label>
+      <input type="number" name="P" id="P" readonly placeholder="$200 or 2% of Bid, whichever is greater" >
+      </div>
+      <div class="ui-field-contain">
+      <label for="D">Document Fee:</label>
+      <input type="number" name="D" id="D" readonly>
+    </div>
+	<div id="Answer"></div>
+    <p>
+      <a href="#ship" class="ui-btn" id="calcButton">Calculate Shipping</a>
+     
+    </p>
+  
+</div>
+<div data-role="footer" data-position="fixed">
+<h4>Bid Calculator</h4>
+</div>
+</div>
+<div data-role="page" id="ship">
+        	<div data-role="header">
+			<a href="#page2" class="ui-btn  ui-icon-arrow-l ui-btn-icon-left">Last Page</a>
+			<div class="imageSet">
+			<img src="images/hank24.png" width="130" height="91" alt=""/>
+			<h3>Hank's Auto Auctions</h3>
+	</div>
+	<a href="#cart" class="ui-btn ui-icon-cart ui-btn-icon-left">Cart</a>
+            </div>
+            <div class="ui-content" role="main">  
+				<div class="ui-content" role="main">
+        			<div id="map_canvas" style="height:300px;"></div>
+       			</div>
+                    
+                    <div data-role="fieldcontain">
+                        <label for="to">To</label> 
+                        <input type="text" id="to" value="Seattle, WA" data-clear-btn="true"/>
+                    </div>
+				<div data-role="fieldcontain">
+                        <label for="from">From our location in</label> 
+                        <input type="text" id="from" value="Ellensburg, WA" data-clear-btn="true" readonly/>
+                    </div>
+                    <div data-role="fieldcontain">
+                        <label for="mode" class="select">Transportation method:</label>
+                        <select name="select-choice-0" id="mode">
+                            <option value="0">Open Transport ($1 per mile)</option>
+                            <option value="1">Covered Transport ($2.50 per mile)</option>
+                            <option value="2">Enclosed Transport ($3.50 per mile)</option>
+							<option value="3">Local Pick-Up (Loading Fee of $50)</option>
+                        </select>
+                    </div>
+					<div id="Answer2"></div>
+                   <a data-icon="search" data-role="button" href="#" id="submit" onClick="findit()">Get Shipping Price</a>  
+           	</div>
+           	<div data-role="footer" data-position="fixed">
+				<h3>Shipping Calculator</h3>
+			</div>
+</div>
+<div data-role="page" id="directions">
+      	<div data-role="header" data-position="fixed">
+            <h3>Hank's Auto Auctions</h3> 
+		</div>
+        <div class="ui-content" role="main" id="theDirections">
+        <div class="ui-content" role="main" id="theCost">
+        </div>
+        <div data-role="footer" data-position="fixed">
+		<h3>Directions</h3>
+        </div>
+</div>
+</div>
+<div data-role="page" id="cart">
+      	<div data-role="header" data-position="fixed">
+			<a href="#pageL" class="ui-btn  ui-icon-arrow-l ui-btn-icon-left">Home</a>
+            <h3>Hank's Auto Auctions</h3> 
+	</div>
+        <div class="ui-content" role="main" id="myCart">
+        </div>
+		<a href="#page2" class="ui-btn" id="checkOut">Checkout</a>
+        <div data-role="footer" data-position="fixed">
+		<h3>Cart</h3>
+        </div>
+</div>
+<div data-role="page" id="pageV">
+      	<div data-role="header" data-position="fixed">
+            <h3>Hank's Auto Auctions</h3> 
+		</div>
+		<div class="ui-content" data-role="content">
+		<h1>Cookie Policy for Hank's Auto Auctions</h1>
+
+
+<p><strong>What Cookies Are</strong></p>
+
+<p>Cookies are tiny files that store information from the websites and webpages that you visit. These files are stored in your browser, sometimes for an indefinite period of time, to help enhance your experience on the individual webpages that you visit.</p>
+
+<p>To learn more about cookies, you can read the wikipedia article <a href="https://en.wikipedia.org/wiki/HTTP_cookie">here</a></p>
+
+<p><strong>How Hank's Auto Auction Uses Cookies</strong></p>
+
+<p>Hank's Auto Auction currently uses cookies to save user forum input data, such as the one that appears below on this page. This data is used to help personalize your experince with our site. We also uses cookies to save item(s) that you end up putting into your shopping cart. This is so that if you return to our site at a later time, you can continue shopping where you left off. The information that you provide us that is stored within cookies is not sold to any third-party.</p>
+
+<p><strong>How You Can Avoid Using Cookies</strong></p>
+			
+<p>If you are not comfortable with Hank's Auto Auction storing cookies on your computer, there are a few options for you. Our site by design requires the usage of cookies, but you can still disable cookies within your own web browser. Other websites as well as our own you many not function optimaly without cookies. Disable them at your own risk. To learn how to disable cookies for the browser you are using, please visit <a href="http://www.allaboutcookies.org/manage-cookies/stop-cookies-installed.html">http://www.allaboutcookies.org/manage-cookies/stop-cookies-installed.html</a> for more information on how to disable and delete cookies from your browser. For any additional questions regarding our policy on cookies, please email us at testing@abc123provider.com</p>
+
+<p><strong>Note: By checking the following box and hitting the continue button, you are giving your consent to Hank's Auto Auction to use and store information via cookies within your web browser.  </strong></p>
+<form>
+<div class="ui-checkbox">
+    <label for="checkbox-enhanced" class="ui-btn ui-corner-all ui-btn-inherit ui-btn-icon-left ui-checkbox-off">I agree</label>
+    <input type="checkbox" name="checkbox-enhanced" class="theBox" id="checkbox-enhanced" data-enhanced="true" required>
+</div>
+</form>
+	<div id="theHolder"><a href="#" onClick="endIt()" class="ui-btn" id="thasButton">Confirm your agreement</a></div>
+		</div>
+        <div data-role="footer" data-position="fixed">
+		<h3>Cookie Agreement</h3>
+        </div>
+</div>
+<script src="test3b.js"></script>
+<script type="text/javascript">
+$(document).on("pageinit", "#page", function(){
+	checkSaveIt();
+	var LSC = localStorage.consentRecievedHAA;
+	var whatThe = "";
+	if (LSC == "True") {
+			whatThe = "pageL";
+		} else {
+			whatThe = "pageV";
+		}
+	var constracter = '<a href="#'+whatThe+'"><img src="images/adGif.gif" width="100%" height="400" alt=""/></a>';
+	$('#importantImage').append(constracter);
+	return;
+	});
+	function endIt(){
+		var holder = $('input[name="checkbox-enhanced"]').prop("checked");
+		if (holder == true){
+		localStorage.consentRecievedHAA = "True";
+		$('input[name="checkbox-enhanced"]').attr("disabled", true);
+		var theButtonHere = document.getElementById("thasButton");
+			theButtonHere.parentNode.removeChild(theButtonHere);
+		var constracter = '<a href="#pageL" class="ui-btn" id="thasButton" >Click here to enter our site</a>';
+				$('#theHolder').append(constracter);
+			return;
+		} else {
+			alert("Please check the box to continue to our site.");
+			return;
+		}
+	}
+	$(document).on("pageshow", "#ship", function() {
+      		initialise();
+		  	calculateRoute();
+          
+           	});
+	 $(document).on('click', '#ship', function(e) {
+          	e.preventDefault();
+		  	calculateRoute();
+            });
+
+		var directionDisplay;
+		var directionsService = new google.maps.DirectionsService();
+	    var service = new google.maps.DistanceMatrixService();
+        var map;
+		var meters = 0;
+	    var miles = 0;
+	    var prevCost = 0;
+		var tempCost = 1;
+		var theCheck = 0;
+		var transportType = "Open";
+	function initialise() 
+        {
+        	directionsDisplay = new google.maps.DirectionsRenderer();
+            var mapCenter = new google.maps.LatLng(47, -120.5);
+
+            var mapOptions = {
+                zoom:7,
+                mapTypeId: google.maps.MapTypeId.ROADMAP,
+                center: mapCenter
+                }
+                map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions);
+                directionsDisplay.setMap(map);
+				directionsDisplay.setPanel(document.getElementById("theDirections"))
+				}
+	function calculateRoute() 
+            {
+             	var selectedMode = "DRIVING",
+					start = $("#from").val(),
+					end = $("#to").val();
+				
+				if(start == ''){
+				   //cannot calculate without route info
+				   alert("Please enter a destination into the empty input.");
+					return;
+				   }
+				
+				else{
+					var request = {
+						origin:start,
+						destination: end,
+						travelMode: google.maps.DirectionsTravelMode[selectedMode]
+					};
+					directionsService.route(request,function(response, status){
+						if(status == google.maps.DirectionsStatus.OK){
+							meters = response.routes[0].legs[0].distance.value;
+							directionsDisplay.setDirections(response);
+						}
+						else{
+							return;
+						}
+					});
+				}
+			}
+function findit(){
+	returnIt();
+	rawCars = JSON.parse(localStorage.getItem('cart'));
+	numCars =  rawCars.length;
+	prevCost = $('#theCost').html();
+	miles = Math.round(meters / 1609.344);
+	prevCost = parseInt(prevCost);
+	var oneThisStuff = miles * tempCost * numCars;
+	var thisStuff = miles * tempCost;
+	if(isNaN(miles)){
+		alert('Sorry, you entered an invalid address or we do not deliver to this location. Please check the address you put in is correct');
+		return;
+	}
+	else if(isNaN(prevCost)){
+		alert('Please return to the home page. An error has occured.');
+		return;
+	}
+	else{
+	if (tempCost == 0){
+		var thePlus = 50;
+		var theLast = thePlus + prevCost;
+		$('#Answer2').html("The cost of shipping will be free since you are picking up. However, there is a $50 loading fee per car. Your grand total with the $"+prevCost+" for the car(s) will be $"+theLast+" ");
+		return;
+	}
+	else{
+		var theMult = Math.round(thisStuff * 100)/100;
+		var theEnd =  theMult + prevCost;
+		if (tempCost == 1){
+			transportType = "open";
+		}else if (tempCost == 2.5){
+			transportType = "covered";
+		}else{
+			transportType = "enclosed";
+		}
+		$('#Answer2').html("The cost of shipping for the "+transportType+" shipping transport will be $"+theMult+" per mile for each car . The grand total with shipping  included will be $"+theEnd+" .");
+		return;
+	}
+	}
+}
+function returnIt(){
+	
+	theSel = document.getElementById("mode");
+	var stuff = theSel.options[theSel.selectedIndex].value;
+	if (stuff == 3){
+		tempCost = 0;
+	}else if (stuff == 2){
+		tempCost =  3.5;
+		
+	}else if (stuff == 1){
+		tempCost =  2.5;
+	}else{
+		tempCost = 1;
+	}
+	return tempCost;
+}
+//$('#costButton').click(calcIt);
+$('#checkOut').click(checkIt);
+//$(".delIt").click(deleteCar);
+$("#submit").click(findit);
+$("#submit").click(findit);
+$('#to').on("keyup", calculateRoute);
+$('#mode').change(returnIt);
+$('#thisbutton').click(resolveIt);
+
+$(window).on('beforeunload', function(){
+  checkSaveIt();
+});
+
+$(window).on('unload', function(){
+  checkSaveIt();
+});
+function checkSaveIt(){
+	if (localStorage.getItem("cart") === null) {
+		var thisQuickCart = [];
+		localStorage.setItem('cart', JSON.stringify(thisQuickCart));
+ return;
+}else{
+	localStorage.setItem('cart', JSON.stringify(cart));
+	return;
+}
+}
+function saveIt(thisStuff){
+	var tempCart = thisStuff;
+	localStorage.setItem('cart', JSON.stringify(tempCart));
+}
+</script> 
+</body>
+
+</html>
+
+
+
+

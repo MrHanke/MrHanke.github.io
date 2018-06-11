@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataroot>
+<standards>
+<basePremium>200</basePremium>
+<premiumPerc>0.02</premiumPerc>
+<documentFee>30</documentFee>
+<salesTax>0.09</salesTax>
+<loadFee>100</loadFee>
+<openRate>1.2</openRate>
+<coveredRate>1.5</coveredRate>
+<enclosedRate>2.1</enclosedRate>
+</standards>
+<computer>
+<ID>1</ID>
+<CarName>2004 Ford Taurus SE</CarName>
+<CarNameId>fordTar</CarNameId>
+<PromoImg>sale.png</PromoImg>
+<DisplayImg>04TaurusSE.png</DisplayImg>
+<AuctionEnd>Jun 20, 2018 12:25:25</AuctionEnd>
+<EndText> June 20th at 12:25pm</EndText>
+<CarYear>2004</CarYear>
+<price>7700</price>
+<Manufacturer>Ford</Manufacturer>
+<Miles>140,240</Miles>
+<Color>Silver</Color>
+<Transmition>Automatic</Transmition>
+<Engine>3.0 L V6</Engine>
+<notes>Runs great. Former daily driver.</notes>
+</computer>
+<computer>
+<ID>2</ID>
+<CarName>1997 Acura Integra Coupe</CarName>
+<CarNameId>accuraInteg</CarNameId>
+<PromoImg>deal.jpg</PromoImg>
+<DisplayImg>1997_acura_integra_type_r_coupe_2.jpg</DisplayImg>
+<AuctionEnd>Jun 11, 2018 18:12:19</AuctionEnd>
+<EndText> June 11 at 6:12pm</EndText>
+<CarYear>1997</CarYear>
+<price>2250</price>
+<Manufacturer>Acura</Manufacturer>
+<Miles>200,120</Miles>
+<Color>White</Color>
+<Transmition>Automatic</Transmition>
+<Engine>1.6 L 4-cylider</Engine>
+<notes>Slight knock in engine, otherwise fine!</notes>
+</computer>
+<computer>
+<ID>3</ID>
+<CarName>1971 Ford Pinto</CarName>
+<CarNameId>fordPint</CarNameId>
+<PromoImg>wow.png</PromoImg>
+<DisplayImg>1971fordpinto.png</DisplayImg>
+<AuctionEnd>Jun 12, 2018 09:01:15</AuctionEnd>
+<EndText> June 12 at 9:01am</EndText>
+<CarYear>1971</CarYear>
+<price>5000</price>
+<Manufacturer>Ford</Manufacturer>
+<Miles>178,311</Miles>
+<Color>White</Color>
+<Transmition>Manual</Transmition>
+<Engine>2.0 L I4</Engine>
+<notes>Can opener not included.</notes>
+</computer>
+<computer>
+<ID>4</ID>
+<CarName>2005 Mazda MPX LX</CarName>
+<CarNameId>mazdaMPV</CarNameId>
+<PromoImg>sale.png</PromoImg>
+<DisplayImg>2005_mazda_mpv_lx_2.jpg</DisplayImg>
+<Description>tes</Description>
+<AuctionEnd>Jun 14, 2018 13:44:12</AuctionEnd>
+<EndText> June 14 at 1:44pm</EndText>
+<CarYear>2005</CarYear>
+<price>9940</price>
+<Manufacturer>Mazda</Manufacturer>
+<Miles>160,528</Miles>
+<Color>Silver</Color>
+<Transmition>Automatic</Transmition>
+<Engine>3.0 L V6</Engine>
+<notes>Only serious offers considered.</notes>
+</computer>
+<computer>
+<ID>5</ID>
+<CarName>1967 Ford Mustang (Project Car)</CarName>
+<CarNameId>fordMust</CarNameId>
+<PromoImg>sale.png</PromoImg>
+<DisplayImg>mustangprojectcar.jpg</DisplayImg>
+<Description>test</Description>
+<AuctionEnd>Jun 12, 2018 15:30:22</AuctionEnd>
+<EndText> June 12 at 3:30pm</EndText>
+<CarYear>1967</CarYear>
+<price>3300</price>
+<Manufacturer>Ford</Manufacturer>
+<Miles>134,433</Miles>
+<Color>Red</Color>
+<Transmition>Manual</Transmition>
+<Engine>N/A</Engine>
+<notes>Needs a lot of TLC as well as a new engine.</notes>
+</computer>
+<computer>
+<ID>6</ID>
+<CarName>1983 Toyota Corolla DX</CarName>
+<CarNameId>toyotaCor</CarNameId>
+<PromoImg>deal.jpg</PromoImg>
+<DisplayImg>ToyotaCorollaDx1.jpg</DisplayImg>
+<Description>test</Description>
+<AuctionEnd>Jun 15, 2018 05:11:22</AuctionEnd>
+<EndText> June 15 at 5:11am</EndText>
+<CarYear>1983</CarYear>
+<price>2100</price>
+<Manufacturer>Toyota</Manufacturer>
+<Miles>211,144</Miles>
+<Color>Light Grey</Color>
+<Transmition>Manual</Transmition>
+<Engine>1.5 L I4</Engine>
+<notes>Good for the first time driver.</notes>
+</computer>
+<computer>
+<ID>7</ID>
+<CarName>1974 De Tomaso Pantera GTS</CarName>
+<CarNameId>deTomasoGTS</CarNameId>
+<PromoImg>wow.png</PromoImg>
+<DisplayImg>3778758_de-tomaso-v0.jpg</DisplayImg>
+<Description>test</Description>
+<AuctionEnd>Jun 10, 2018 23:12:33</AuctionEnd>
+<EndText> June 10 at 11:12pm</EndText>
+<CarYear>1974</CarYear>
+<price>78000</price>
+<Manufacturer>De</Manufacturer>
+<Miles>48,500</Miles>
+<Color>Red</Color>
+<Transmition>Manual</Transmition>
+<Engine>5.7 L V8</Engine>
+<notes>The rarest car we got, buy it now!</notes>
+</computer>
+<computer>
+<ID>8</ID>
+<CarName>2016 Chinese Ford Taurus</CarName>
+<CarNameId>fordTarChina</CarNameId>
+<PromoImg>deal.jpg</PromoImg>
+<DisplayImg>Ford_Taurus_CN_03_China_2016.jpg</DisplayImg>
+<Description>test</Description>
+<AuctionEnd>Jun 9, 2018 18:00:01</AuctionEnd>
+<EndText> June 9 at 6:00pm</EndText>
+<CarYear>2016</CarYear>
+<price>11000</price>
+<Manufacturer>Ford</Manufacturer>
+<Miles>24,322</Miles>
+<Color>Grey</Color>
+<Transmition>Automatic</Transmition>
+<Engine>2.0 L 4-cylinder</Engine>
+<notes>Our newest import, for a great price!</notes>
+</computer>
+<computer>
+<ID>9</ID>
+<CarName>1969 Chevrolet SS Camero</CarName>
+<CarNameId>chevCam</CarNameId>
+<PromoImg>wow.png</PromoImg>
+<DisplayImg>1969_SSCamero.jpg</DisplayImg>
+<Description>test</Description>
+<AuctionEnd>Jun 9, 2018 12:18:11</AuctionEnd>
+<EndText> June 9 at 12:18pm</EndText>
+<CarYear>1969</CarYear>
+<price>9900</price>
+<Manufacturer>Chevrolet</Manufacturer>
+<Miles>89,650</Miles>
+<Color>Orange</Color>
+<Transmition>Manual</Transmition>
+<Engine>5.0 L V8</Engine>
+<notes>One of the best deals on our site!</notes>
+</computer>
+<computer>
+<ID>10</ID>
+<CarName>1971 Chevrolet Impala</CarName>
+<CarNameId>chevImp</CarNameId>
+<PromoImg>sale.png</PromoImg>
+<DisplayImg>1971_chevrolet_impala.jpg</DisplayImg>
+<Description>test</Description>
+<AuctionEnd>Jun 10, 2018 16:25:11</AuctionEnd>
+<EndText> June 10 at 4:25pm</EndText>
+<CarYear>1971</CarYear>
+<price>10500</price>
+<Manufacturer>Chevrolet</Manufacturer>
+<Miles>44,394</Miles>
+<Color>White</Color>
+<Transmition>Automatic</Transmition>
+<Engine>5.7 L V8</Engine>
+<notes>Great classic car, priced to sell!</notes>
+</computer>
+</dataroot>
