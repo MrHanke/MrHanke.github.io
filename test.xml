@@ -16,8 +16,8 @@
 <CarNameId>fordTar</CarNameId>
 <PromoImg>sale.png</PromoImg>
 <DisplayImg>04TaurusSe2.jpg</DisplayImg>
-<AuctionEnd>Jun 20, 2018 12:25:25</AuctionEnd>
-<EndText> June 20th at 12:25pm</EndText>
+<AuctionEnd>Mar 3, 2019 12:25:25</AuctionEnd>
+<EndText> March 3rd at 12:25pm</EndText>
 <CarYear>2004</CarYear>
 <price>7700</price>
 <Manufacturer>Ford</Manufacturer>
@@ -33,8 +33,8 @@
 <CarNameId>accuraInteg</CarNameId>
 <PromoImg>deal.jpg</PromoImg>
 <DisplayImg>1997_acura_integra_type_r_coupe_2.jpg</DisplayImg>
-<AuctionEnd>Jun 11, 2018 18:12:19</AuctionEnd>
-<EndText> June 11 at 6:12pm</EndText>
+<AuctionEnd>Mar 11, 2019 18:12:19</AuctionEnd>
+<EndText> March 11th at 6:12pm</EndText>
 <CarYear>1997</CarYear>
 <price>2250</price>
 <Manufacturer>Acura</Manufacturer>
@@ -50,8 +50,8 @@
 <CarNameId>fordPint</CarNameId>
 <PromoImg>wow.png</PromoImg>
 <DisplayImg>1971fordpinto.png</DisplayImg>
-<AuctionEnd>Jun 12, 2018 09:01:15</AuctionEnd>
-<EndText> June 12 at 9:01am</EndText>
+<AuctionEnd>Mar 12, 2019 09:01:15</AuctionEnd>
+<EndText> March 12 at 9:01am</EndText>
 <CarYear>1971</CarYear>
 <price>5000</price>
 <Manufacturer>Ford</Manufacturer>
@@ -68,8 +68,8 @@
 <PromoImg>sale.png</PromoImg>
 <DisplayImg>2005_mazda_mpv_lx_2.jpg</DisplayImg>
 <Description>tes</Description>
-<AuctionEnd>Jun 14, 2018 13:44:12</AuctionEnd>
-<EndText> June 14 at 1:44pm</EndText>
+<AuctionEnd>Feb 28, 2019 13:44:12</AuctionEnd>
+<EndText> February 28th at 1:44pm</EndText>
 <CarYear>2005</CarYear>
 <price>9940</price>
 <Manufacturer>Mazda</Manufacturer>
@@ -86,8 +86,8 @@
 <PromoImg>sale.png</PromoImg>
 <DisplayImg>mustangprojectcar.jpg</DisplayImg>
 <Description>test</Description>
-<AuctionEnd>Jun 12, 2018 15:30:22</AuctionEnd>
-<EndText> June 12 at 3:30pm</EndText>
+<AuctionEnd>Feb 27, 2019 15:30:22</AuctionEnd>
+<EndText> February 27th at 3:30pm</EndText>
 <CarYear>1967</CarYear>
 <price>3300</price>
 <Manufacturer>Ford</Manufacturer>
@@ -104,8 +104,8 @@
 <PromoImg>deal.jpg</PromoImg>
 <DisplayImg>ToyotaCorollaDx1.jpg</DisplayImg>
 <Description>test</Description>
-<AuctionEnd>Jun 15, 2018 05:11:22</AuctionEnd>
-<EndText> June 15 at 5:11am</EndText>
+<AuctionEnd>Mar 15, 2019 05:11:22</AuctionEnd>
+<EndText> March 15 at 5:11am</EndText>
 <CarYear>1983</CarYear>
 <price>2100</price>
 <Manufacturer>Toyota</Manufacturer>
@@ -122,8 +122,8 @@
 <PromoImg>wow.png</PromoImg>
 <DisplayImg>3778758_de-tomaso-v0.jpg</DisplayImg>
 <Description>test</Description>
-<AuctionEnd>Jun 10, 2018 23:12:33</AuctionEnd>
-<EndText> June 10 at 11:12pm</EndText>
+<AuctionEnd>Feb 27, 2019 23:12:33</AuctionEnd>
+<EndText> February 10 at 11:12pm</EndText>
 <CarYear>1974</CarYear>
 <price>78000</price>
 <Manufacturer>De</Manufacturer>
@@ -140,8 +140,8 @@
 <PromoImg>deal.jpg</PromoImg>
 <DisplayImg>Ford_Taurus_CN_03_China_2016.jpg</DisplayImg>
 <Description>test</Description>
-<AuctionEnd>Jun 9, 2018 18:00:01</AuctionEnd>
-<EndText> June 9 at 6:00pm</EndText>
+<AuctionEnd>Mar 9, 2019 18:00:01</AuctionEnd>
+<EndText> March 9 at 6:00pm</EndText>
 <CarYear>2016</CarYear>
 <price>11000</price>
 <Manufacturer>Ford</Manufacturer>
@@ -158,8 +158,8 @@
 <PromoImg>wow.png</PromoImg>
 <DisplayImg>1969_SSCamero.jpg</DisplayImg>
 <Description>test</Description>
-<AuctionEnd>Jun 9, 2018 12:18:11</AuctionEnd>
-<EndText> June 9 at 12:18pm</EndText>
+<AuctionEnd>Mar 9, 2019 12:18:11</AuctionEnd>
+<EndText> March 9 at 12:18pm</EndText>
 <CarYear>1969</CarYear>
 <price>9900</price>
 <Manufacturer>Chevrolet</Manufacturer>
@@ -176,8 +176,8 @@
 <PromoImg>sale.png</PromoImg>
 <DisplayImg>1971_chevrolet_impala.jpg</DisplayImg>
 <Description>test</Description>
-<AuctionEnd>Jun 10, 2018 16:25:11</AuctionEnd>
-<EndText> June 10 at 4:25pm</EndText>
+<AuctionEnd>March 1, 2019 16:25:11</AuctionEnd>
+<EndText> Mar 1 at 4:25pm</EndText>
 <CarYear>1971</CarYear>
 <price>10500</price>
 <Manufacturer>Chevrolet</Manufacturer>
